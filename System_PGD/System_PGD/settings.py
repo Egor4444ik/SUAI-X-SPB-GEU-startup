@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_celery_beat'
 ]
 
 MIDDLEWARE = [
@@ -117,6 +118,20 @@ USE_I18N = True
 
 USE_TZ = True
 
+CELERY_IMPORTS = ('account.tasks',)
+
+CELERY_BROKER_URL = 'redis://localhost:6379/0'  # Или URL вашего брокера сообщений
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/0' # Или другой подходящий backend
+CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler' # Используем базу данных для хранения расписания
+
+CELERY_SEND_TASK_ERROR_EMAILS = True
+CELERY_TASK_RESULT_EXPIRES = None
+
+ADMINS = ( ('Admin', 'admin@localhost'), )
+
+CELERYD_MAX_TASKS_PER_CHILD = 5
+
+CELERY_DISABLE_RATE_LIMITS = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/

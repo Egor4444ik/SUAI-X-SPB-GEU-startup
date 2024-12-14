@@ -3,13 +3,12 @@ from django.shortcuts import render
 from django.contrib.auth import authenticate, login
 from .forms import LoginForm, UserRegistrationForm
 from django.contrib.auth.decorators import login_required
-from .models import ozon
 
 @login_required
 def dashboard(request):
-    ozon_instance = ozon.objects.get_or_create(user=request.user)[0]
+    '''ozon_instance = ozon.objects.get_or_create(user=request.user)[0]
     ozon_instance.update_data()
-    print(ozon_instance.data.get('iphone_16', {}))
+    print(ozon_instance.data.get('iphone_16', {}))'''
     return render(request,
                   'account/dashboard.html',
                   {'section': 'dashboard'})
