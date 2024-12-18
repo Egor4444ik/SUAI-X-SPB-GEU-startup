@@ -120,10 +120,10 @@ USE_TZ = True
 
 CELERY_IMPORTS = ('account.tasks',)
 
-CELERY_BROKER_URL = 'redis://localhost:6379/0'  # Или URL вашего брокера сообщений
-CELERY_RESULT_BACKEND = 'redis://localhost:6379/0' # Или другой подходящий backend
-CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler' # Используем базу данных для хранения расписания
-
+CELERY_BROKER_URL = 'redis://localhost:6379/0'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
+CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
+CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
 CELERY_SEND_TASK_ERROR_EMAILS = True
 CELERY_TASK_RESULT_EXPIRES = None
 

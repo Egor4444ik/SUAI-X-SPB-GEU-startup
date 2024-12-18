@@ -80,13 +80,13 @@ def take_info(Client_Id='', Api_key='', take_price=False, Stock_method='', offer
         return data['result']
 
     except requests.exceptions.HTTPError as e:
-        logging.error(f"Ошибка API Ozon (HTTPError): {e}, код ошибки: {response.status_code}, ответ: {response.text}")
+        #logging.error(f"Ошибка API Ozon (HTTPError): {e}, код ошибки: {response.status_code}, ответ: {response.text}")
         return None  # Возвращаем None при ошибке
     except (KeyError, json.JSONDecodeError) as e:
-        logging.error(f"Ошибка обработки ответа API Ozon: {e}, ответ: {response.text}")
+        #logging.error(f"Ошибка обработки ответа API Ozon: {e}, ответ: {response.text}")
         return None  # Возвращаем None при ошибке
     except Exception as e:
-        logging.exception(f"Непредвиденная ошибка: {e}")  # логируем исключения с traceback
+        #logging.exception(f"Непредвиденная ошибка: {e}")  # логируем исключения с traceback
         return None  # Возвращаем None при ошибке
 
 

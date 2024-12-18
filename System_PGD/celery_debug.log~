@@ -1,0 +1,1240 @@
+2024-12-16 01:02:19,090 - DEBUG - Starting new HTTPS connection (1): api-seller.ozon.ru:443
+2024-12-16 01:02:19,351 - DEBUG - https://api-seller.ozon.ru:443 "POST /v1/product/info/stocks-by-warehouse/fbs HTTP/11" 400 57
+2024-12-16 01:02:19,511 - DEBUG - 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+2024-12-16 01:02:19,512 - DEBUG - 
+def xmap(task, it):
+    return 1
+
+2024-12-16 01:02:19,512 - DEBUG - 
+def backend_cleanup():
+    return 1
+
+2024-12-16 01:02:19,513 - DEBUG - 
+def chain(*args, **kwargs):
+    return 1
+
+2024-12-16 01:02:19,513 - DEBUG - 
+def xstarmap(task, it):
+    return 1
+
+2024-12-16 01:02:19,514 - DEBUG - 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+2024-12-16 01:02:19,514 - DEBUG - 
+def do_data_update():
+    return 1
+
+2024-12-16 01:02:19,514 - DEBUG - 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+2024-12-16 01:02:19,515 - DEBUG - 
+def chunks(task, it, n):
+    return 1
+
+2024-12-16 01:02:19,515 - DEBUG - 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[2024-12-16 01:02:19,555: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2024-12-16 01:02:19,557: DEBUG/MainProcess] | Worker: Building graph...
+[2024-12-16 01:02:19,557: DEBUG/MainProcess] | Worker: New boot order: {StateDB, Beat, Timer, Hub, Pool, Autoscaler, Consumer}
+[2024-12-16 01:02:19,564: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2024-12-16 01:02:19,564: DEBUG/MainProcess] | Consumer: Building graph...
+[2024-12-16 01:02:19,572: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Agent, Events, Mingle, Gossip, Heart, Tasks, Control, event loop}
+None
+ 
+ -------------- celery@MSI v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Windows-10-10.0.22631-SP0 2024-12-16 01:02:19
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         System_PGD:0x20525c4cd50
+- ** ---------- .> transport:   redis://localhost:6379/0
+- ** ---------- .> results:     redis://localhost:6379/0
+- *** --- * --- .> concurrency: 12 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . account.tasks.do_data_update
+  . celery.accumulate
+  . celery.backend_cleanup
+  . celery.chain
+  . celery.chord
+  . celery.chord_unlock
+  . celery.chunks
+  . celery.group
+  . celery.map
+  . celery.starmap
+
+[2024-12-16 01:02:19,588: DEBUG/MainProcess] | Worker: Starting Pool
+[2024-12-16 01:02:19,658: DEBUG/MainProcess] ^-- substep ok
+[2024-12-16 01:02:19,658: DEBUG/MainProcess] | Worker: Starting Consumer
+[2024-12-16 01:02:19,658: DEBUG/MainProcess] | Consumer: Starting Connection
+[2024-12-16 01:02:19,676: WARNING/MainProcess] C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\celery\worker\consumer\consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-16 01:02:19,679: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-12-16 01:02:19,679: DEBUG/MainProcess] ^-- substep ok
+[2024-12-16 01:02:19,679: DEBUG/MainProcess] | Consumer: Starting Events
+[2024-12-16 01:02:19,680: WARNING/MainProcess] C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\celery\worker\consumer\consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-16 01:02:19,682: DEBUG/MainProcess] ^-- substep ok
+[2024-12-16 01:02:19,683: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2024-12-16 01:02:19,683: INFO/MainProcess] mingle: searching for neighbors
+[2024-12-16 01:02:19,812: DEBUG/MainProcess] recreated blocker with handle 32
+[2024-12-16 01:02:19,812: DEBUG/MainProcess] recreated blocker with handle 36
+[2024-12-16 01:02:19,823: DEBUG/MainProcess] recreated blocker with handle 20
+[2024-12-16 01:02:19,824: DEBUG/MainProcess] recreated blocker with handle 20
+[2024-12-16 01:02:19,824: DEBUG/MainProcess] recreated blocker with handle 24
+[2024-12-16 01:02:19,824: DEBUG/MainProcess] recreated blocker with handle 24
+[2024-12-16 01:02:19,826: DEBUG/MainProcess] recreated blocker with handle 28
+[2024-12-16 01:02:19,826: DEBUG/MainProcess] recreated blocker with handle 36
+[2024-12-16 01:02:19,833: DEBUG/MainProcess] recreated blocker with handle 28
+[2024-12-16 01:02:19,833: DEBUG/MainProcess] recreated blocker with handle 36
+[2024-12-16 01:02:19,865: DEBUG/MainProcess] recreated blocker with handle 32
+[2024-12-16 01:02:19,865: DEBUG/MainProcess] recreated blocker with handle 36
+[2024-12-16 01:02:19,868: DEBUG/MainProcess] recreated blocker with handle 20
+[2024-12-16 01:02:19,868: DEBUG/MainProcess] recreated blocker with handle 20
+[2024-12-16 01:02:19,868: DEBUG/MainProcess] recreated blocker with handle 24
+[2024-12-16 01:02:19,868: DEBUG/MainProcess] recreated blocker with handle 24
+[2024-12-16 01:02:19,870: DEBUG/MainProcess] recreated blocker with handle 20
+[2024-12-16 01:02:19,870: DEBUG/MainProcess] recreated blocker with handle 24
+[2024-12-16 01:02:19,875: DEBUG/MainProcess] recreated blocker with handle 20
+[2024-12-16 01:02:19,875: DEBUG/MainProcess] recreated blocker with handle 24
+[2024-12-16 01:02:19,876: DEBUG/MainProcess] recreated blocker with handle 20
+[2024-12-16 01:02:19,876: DEBUG/MainProcess] recreated blocker with handle 24
+[2024-12-16 01:02:19,884: DEBUG/MainProcess] recreated blocker with handle 20
+[2024-12-16 01:02:19,884: DEBUG/MainProcess] recreated blocker with handle 24
+[2024-12-16 01:02:20,189: DEBUG/MainProcess] recreated blocker with handle 36
+[2024-12-16 01:02:20,189: INFO/SpawnPoolWorker-5] child process 9696 calling self.run()
+[2024-12-16 01:02:20,192: DEBUG/MainProcess] recreated blocker with handle 36
+[2024-12-16 01:02:20,193: INFO/SpawnPoolWorker-3] child process 16580 calling self.run()
+[2024-12-16 01:02:20,197: DEBUG/MainProcess] recreated blocker with handle 40
+[2024-12-16 01:02:20,197: INFO/SpawnPoolWorker-1] child process 23424 calling self.run()
+[2024-12-16 01:02:20,211: DEBUG/MainProcess] recreated blocker with handle 32
+[2024-12-16 01:02:20,212: INFO/SpawnPoolWorker-2] child process 6524 calling self.run()
+[2024-12-16 01:02:20,219: DEBUG/MainProcess] recreated blocker with handle 40
+[2024-12-16 01:02:20,219: INFO/SpawnPoolWorker-4] child process 8724 calling self.run()
+[2024-12-16 01:02:20,225: DEBUG/MainProcess] recreated blocker with handle 28
+[2024-12-16 01:02:20,225: INFO/SpawnPoolWorker-10] child process 13432 calling self.run()
+[2024-12-16 01:02:20,232: DEBUG/MainProcess] recreated blocker with handle 40
+[2024-12-16 01:02:20,232: INFO/SpawnPoolWorker-7] child process 7536 calling self.run()
+[2024-12-16 01:02:20,238: DEBUG/MainProcess] recreated blocker with handle 36
+[2024-12-16 01:02:20,238: INFO/SpawnPoolWorker-6] child process 8240 calling self.run()
+[2024-12-16 01:02:20,240: DEBUG/MainProcess] recreated blocker with handle 28
+[2024-12-16 01:02:20,240: INFO/SpawnPoolWorker-8] child process 22492 calling self.run()
+[2024-12-16 01:02:20,244: DEBUG/MainProcess] recreated blocker with handle 32
+[2024-12-16 01:02:20,244: INFO/SpawnPoolWorker-9] child process 21868 calling self.run()
+[2024-12-16 01:02:20,249: DEBUG/MainProcess] recreated blocker with handle 28
+[2024-12-16 01:02:20,250: INFO/SpawnPoolWorker-11] child process 23152 calling self.run()
+[2024-12-16 01:02:20,251: DEBUG/MainProcess] recreated blocker with handle 28
+[2024-12-16 01:02:20,251: INFO/SpawnPoolWorker-12] child process 3104 calling self.run()
+[2024-12-16 01:02:20,708: INFO/MainProcess] mingle: all alone
+[2024-12-16 01:02:20,708: DEBUG/MainProcess] ^-- substep ok
+[2024-12-16 01:02:20,708: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2024-12-16 01:02:20,712: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:20,716: DEBUG/MainProcess] ^-- substep ok
+[2024-12-16 01:02:20,716: DEBUG/MainProcess] | Consumer: Starting Heart
+[2024-12-16 01:02:20,718: DEBUG/MainProcess] ^-- substep ok
+[2024-12-16 01:02:20,719: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2024-12-16 01:02:20,722: DEBUG/MainProcess] ^-- substep ok
+[2024-12-16 01:02:20,722: DEBUG/MainProcess] | Consumer: Starting Control
+[2024-12-16 01:02:20,727: DEBUG/MainProcess] ^-- substep ok
+[2024-12-16 01:02:20,727: DEBUG/MainProcess] | Consumer: Starting event loop
+[2024-12-16 01:02:20,727: INFO/MainProcess] celery@MSI ready.
+[2024-12-16 01:02:20,728: DEBUG/MainProcess] basic.qos: prefetch_count->48
+[2024-12-16 01:02:21,714: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+2024-12-16 01:02:21,722 - DEBUG - Starting new HTTPS connection (1): api-seller.ozon.ru:443
+2024-12-16 01:02:21,799 - DEBUG - Starting new HTTPS connection (1): api-seller.ozon.ru:443
+2024-12-16 01:02:21,801 - DEBUG - Starting new HTTPS connection (1): api-seller.ozon.ru:443
+2024-12-16 01:02:21,805 - DEBUG - Starting new HTTPS connection (1): api-seller.ozon.ru:443
+2024-12-16 01:02:21,821 - DEBUG - Starting new HTTPS connection (1): api-seller.ozon.ru:443
+2024-12-16 01:02:21,824 - DEBUG - Starting new HTTPS connection (1): api-seller.ozon.ru:443
+2024-12-16 01:02:21,826 - DEBUG - Starting new HTTPS connection (1): api-seller.ozon.ru:443
+2024-12-16 01:02:21,834 - DEBUG - Starting new HTTPS connection (1): api-seller.ozon.ru:443
+2024-12-16 01:02:21,837 - DEBUG - Starting new HTTPS connection (1): api-seller.ozon.ru:443
+2024-12-16 01:02:21,839 - DEBUG - Starting new HTTPS connection (1): api-seller.ozon.ru:443
+2024-12-16 01:02:21,841 - DEBUG - Starting new HTTPS connection (1): api-seller.ozon.ru:443
+2024-12-16 01:02:21,841 - DEBUG - Starting new HTTPS connection (1): api-seller.ozon.ru:443
+2024-12-16 01:02:21,868 - DEBUG - https://api-seller.ozon.ru:443 "POST /v1/product/info/stocks-by-warehouse/fbs HTTP/11" 400 57
+2024-12-16 01:02:21,918 - DEBUG - https://api-seller.ozon.ru:443 "POST /v1/product/info/stocks-by-warehouse/fbs HTTP/11" 400 57
+2024-12-16 01:02:21,972 - DEBUG - https://api-seller.ozon.ru:443 "POST /v1/product/info/stocks-by-warehouse/fbs HTTP/11" 400 57
+2024-12-16 01:02:21,975 - DEBUG - https://api-seller.ozon.ru:443 "POST /v1/product/info/stocks-by-warehouse/fbs HTTP/11" 400 57
+2024-12-16 01:02:21,976 - DEBUG - https://api-seller.ozon.ru:443 "POST /v1/product/info/stocks-by-warehouse/fbs HTTP/11" 400 57
+2024-12-16 01:02:21,976 - DEBUG - https://api-seller.ozon.ru:443 "POST /v1/product/info/stocks-by-warehouse/fbs HTTP/11" 400 57
+2024-12-16 01:02:21,976 - DEBUG - https://api-seller.ozon.ru:443 "POST /v1/product/info/stocks-by-warehouse/fbs HTTP/11" 400 57
+2024-12-16 01:02:21,976 - DEBUG - https://api-seller.ozon.ru:443 "POST /v1/product/info/stocks-by-warehouse/fbs HTTP/11" 400 57
+2024-12-16 01:02:21,996 - DEBUG - https://api-seller.ozon.ru:443 "POST /v1/product/info/stocks-by-warehouse/fbs HTTP/11" 400 57
+2024-12-16 01:02:22,023 - DEBUG - https://api-seller.ozon.ru:443 "POST /v1/product/info/stocks-by-warehouse/fbs HTTP/11" 400 57
+[2024-12-16 01:02:22,093: DEBUG/SpawnPoolWorker-3] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[2024-12-16 01:02:22,094: DEBUG/SpawnPoolWorker-3] 
+def xmap(task, it):
+    return 1
+
+[2024-12-16 01:02:22,095: DEBUG/SpawnPoolWorker-3] 
+def do_data_update():
+    return 1
+
+[2024-12-16 01:02:22,096: DEBUG/SpawnPoolWorker-3] 
+def backend_cleanup():
+    return 1
+
+[2024-12-16 01:02:22,096: DEBUG/SpawnPoolWorker-3] 
+def chain(*args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,097: DEBUG/SpawnPoolWorker-3] 
+def xstarmap(task, it):
+    return 1
+
+[2024-12-16 01:02:22,097: DEBUG/SpawnPoolWorker-3] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,098: DEBUG/SpawnPoolWorker-3] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,099: DEBUG/SpawnPoolWorker-3] 
+def chunks(task, it, n):
+    return 1
+
+[2024-12-16 01:02:22,100: DEBUG/SpawnPoolWorker-3] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,203: DEBUG/SpawnPoolWorker-5] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[2024-12-16 01:02:22,204: DEBUG/SpawnPoolWorker-5] 
+def xmap(task, it):
+    return 1
+
+[2024-12-16 01:02:22,205: DEBUG/SpawnPoolWorker-5] 
+def do_data_update():
+    return 1
+
+[2024-12-16 01:02:22,205: DEBUG/SpawnPoolWorker-5] 
+def backend_cleanup():
+    return 1
+
+[2024-12-16 01:02:22,206: DEBUG/SpawnPoolWorker-5] 
+def chain(*args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,206: DEBUG/SpawnPoolWorker-5] 
+def xstarmap(task, it):
+    return 1
+
+[2024-12-16 01:02:22,207: DEBUG/SpawnPoolWorker-5] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,207: DEBUG/SpawnPoolWorker-5] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,208: DEBUG/SpawnPoolWorker-5] 
+def chunks(task, it, n):
+    return 1
+
+[2024-12-16 01:02:22,208: DEBUG/SpawnPoolWorker-5] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,283: DEBUG/SpawnPoolWorker-11] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[2024-12-16 01:02:22,284: DEBUG/SpawnPoolWorker-11] 
+def xmap(task, it):
+    return 1
+
+[2024-12-16 01:02:22,284: DEBUG/SpawnPoolWorker-11] 
+def do_data_update():
+    return 1
+
+[2024-12-16 01:02:22,284: DEBUG/SpawnPoolWorker-11] 
+def backend_cleanup():
+    return 1
+
+[2024-12-16 01:02:22,284: DEBUG/SpawnPoolWorker-11] 
+def chain(*args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,285: DEBUG/SpawnPoolWorker-11] 
+def xstarmap(task, it):
+    return 1
+
+[2024-12-16 01:02:22,285: DEBUG/SpawnPoolWorker-11] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,285: DEBUG/SpawnPoolWorker-11] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,286: DEBUG/SpawnPoolWorker-11] 
+def chunks(task, it, n):
+    return 1
+
+[2024-12-16 01:02:22,286: DEBUG/SpawnPoolWorker-11] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,292: DEBUG/SpawnPoolWorker-8] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[2024-12-16 01:02:22,293: DEBUG/SpawnPoolWorker-8] 
+def xmap(task, it):
+    return 1
+
+[2024-12-16 01:02:22,293: DEBUG/SpawnPoolWorker-6] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[2024-12-16 01:02:22,293: DEBUG/SpawnPoolWorker-8] 
+def do_data_update():
+    return 1
+
+[2024-12-16 01:02:22,293: DEBUG/SpawnPoolWorker-8] 
+def backend_cleanup():
+    return 1
+
+[2024-12-16 01:02:22,293: DEBUG/SpawnPoolWorker-6] 
+def xmap(task, it):
+    return 1
+
+[2024-12-16 01:02:22,293: DEBUG/SpawnPoolWorker-8] 
+def chain(*args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,294: DEBUG/SpawnPoolWorker-8] 
+def xstarmap(task, it):
+    return 1
+
+[2024-12-16 01:02:22,294: DEBUG/SpawnPoolWorker-6] 
+def do_data_update():
+    return 1
+
+[2024-12-16 01:02:22,294: DEBUG/SpawnPoolWorker-8] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,294: DEBUG/SpawnPoolWorker-6] 
+def backend_cleanup():
+    return 1
+
+[2024-12-16 01:02:22,294: DEBUG/SpawnPoolWorker-8] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,295: DEBUG/SpawnPoolWorker-8] 
+def chunks(task, it, n):
+    return 1
+
+[2024-12-16 01:02:22,295: DEBUG/SpawnPoolWorker-6] 
+def chain(*args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,295: DEBUG/SpawnPoolWorker-8] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,295: DEBUG/SpawnPoolWorker-6] 
+def xstarmap(task, it):
+    return 1
+
+[2024-12-16 01:02:22,295: DEBUG/SpawnPoolWorker-7] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[2024-12-16 01:02:22,295: DEBUG/SpawnPoolWorker-6] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,295: DEBUG/SpawnPoolWorker-7] 
+def xmap(task, it):
+    return 1
+
+[2024-12-16 01:02:22,296: DEBUG/SpawnPoolWorker-7] 
+def do_data_update():
+    return 1
+
+[2024-12-16 01:02:22,296: DEBUG/SpawnPoolWorker-6] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,296: DEBUG/SpawnPoolWorker-7] 
+def backend_cleanup():
+    return 1
+
+[2024-12-16 01:02:22,296: DEBUG/SpawnPoolWorker-7] 
+def chain(*args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,296: DEBUG/SpawnPoolWorker-6] 
+def chunks(task, it, n):
+    return 1
+
+[2024-12-16 01:02:22,296: DEBUG/SpawnPoolWorker-7] 
+def xstarmap(task, it):
+    return 1
+
+[2024-12-16 01:02:22,297: DEBUG/SpawnPoolWorker-7] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,297: DEBUG/SpawnPoolWorker-6] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,297: DEBUG/SpawnPoolWorker-7] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,297: DEBUG/SpawnPoolWorker-10] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[2024-12-16 01:02:22,297: DEBUG/SpawnPoolWorker-7] 
+def chunks(task, it, n):
+    return 1
+
+[2024-12-16 01:02:22,298: DEBUG/SpawnPoolWorker-7] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,298: DEBUG/SpawnPoolWorker-10] 
+def xmap(task, it):
+    return 1
+
+[2024-12-16 01:02:22,298: DEBUG/SpawnPoolWorker-10] 
+def do_data_update():
+    return 1
+
+[2024-12-16 01:02:22,299: DEBUG/SpawnPoolWorker-10] 
+def backend_cleanup():
+    return 1
+
+[2024-12-16 01:02:22,299: DEBUG/SpawnPoolWorker-10] 
+def chain(*args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,299: DEBUG/SpawnPoolWorker-10] 
+def xstarmap(task, it):
+    return 1
+
+[2024-12-16 01:02:22,300: DEBUG/SpawnPoolWorker-10] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,300: DEBUG/SpawnPoolWorker-10] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,300: DEBUG/SpawnPoolWorker-10] 
+def chunks(task, it, n):
+    return 1
+
+[2024-12-16 01:02:22,300: DEBUG/SpawnPoolWorker-4] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[2024-12-16 01:02:22,301: DEBUG/SpawnPoolWorker-10] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,301: DEBUG/SpawnPoolWorker-4] 
+def xmap(task, it):
+    return 1
+
+[2024-12-16 01:02:22,302: DEBUG/SpawnPoolWorker-4] 
+def do_data_update():
+    return 1
+
+[2024-12-16 01:02:22,302: DEBUG/SpawnPoolWorker-4] 
+def backend_cleanup():
+    return 1
+
+[2024-12-16 01:02:22,302: DEBUG/SpawnPoolWorker-4] 
+def chain(*args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,302: DEBUG/SpawnPoolWorker-4] 
+def xstarmap(task, it):
+    return 1
+
+[2024-12-16 01:02:22,303: DEBUG/SpawnPoolWorker-4] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,303: DEBUG/SpawnPoolWorker-4] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,303: DEBUG/SpawnPoolWorker-4] 
+def chunks(task, it, n):
+    return 1
+
+[2024-12-16 01:02:22,304: DEBUG/SpawnPoolWorker-4] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,304: DEBUG/SpawnPoolWorker-12] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[2024-12-16 01:02:22,304: DEBUG/SpawnPoolWorker-12] 
+def xmap(task, it):
+    return 1
+
+[2024-12-16 01:02:22,304: DEBUG/SpawnPoolWorker-12] 
+def do_data_update():
+    return 1
+
+[2024-12-16 01:02:22,305: DEBUG/SpawnPoolWorker-12] 
+def backend_cleanup():
+    return 1
+
+[2024-12-16 01:02:22,305: DEBUG/SpawnPoolWorker-12] 
+def chain(*args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,305: DEBUG/SpawnPoolWorker-12] 
+def xstarmap(task, it):
+    return 1
+
+[2024-12-16 01:02:22,306: DEBUG/SpawnPoolWorker-12] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,306: DEBUG/SpawnPoolWorker-12] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,306: DEBUG/SpawnPoolWorker-12] 
+def chunks(task, it, n):
+    return 1
+
+[2024-12-16 01:02:22,306: DEBUG/SpawnPoolWorker-12] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,313: DEBUG/SpawnPoolWorker-9] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[2024-12-16 01:02:22,314: DEBUG/SpawnPoolWorker-9] 
+def xmap(task, it):
+    return 1
+
+[2024-12-16 01:02:22,314: DEBUG/SpawnPoolWorker-9] 
+def do_data_update():
+    return 1
+
+[2024-12-16 01:02:22,314: DEBUG/SpawnPoolWorker-9] 
+def backend_cleanup():
+    return 1
+
+[2024-12-16 01:02:22,314: DEBUG/SpawnPoolWorker-9] 
+def chain(*args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,315: DEBUG/SpawnPoolWorker-9] 
+def xstarmap(task, it):
+    return 1
+
+[2024-12-16 01:02:22,315: DEBUG/SpawnPoolWorker-9] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,315: DEBUG/SpawnPoolWorker-9] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,315: DEBUG/SpawnPoolWorker-9] 
+def chunks(task, it, n):
+    return 1
+
+[2024-12-16 01:02:22,316: DEBUG/SpawnPoolWorker-9] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[2024-12-16 01:02:22,299: ERROR/SpawnPoolWorker-7] Pool process <billiard.pool.Worker object at 0x00000178EF808610> error: PermissionError(13, 'Отказано в доступе', None, 5, None)
+Traceback (most recent call last):
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 473, in receive
+    ready, req = _receive(1.0)
+                 ^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 445, in _recv
+    return True, loads(get_payload())
+                       ^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\queues.py", line 394, in get_payload
+    with self._rlock:
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\synchronize.py", line 115, in __enter__
+    return self._semlock.__enter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 351, in workloop
+    req = wait_for_job()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 480, in receive
+    raise SystemExit(EX_FAILURE)
+SystemExit: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 292, in __call__
+    sys.exit(self.workloop(pid=pid))
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 396, in workloop
+    self._ensure_messages_consumed(completed=completed)
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 406, in _ensure_messages_consumed
+    if self.on_ready_counter.value >= completed:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 3, in getvalue
+PermissionError: [WinError 5] Отказано в доступе
+[2024-12-16 01:02:22,299: ERROR/SpawnPoolWorker-7] Pool process <billiard.pool.Worker object at 0x00000178EF808610> error: PermissionError(13, 'Отказано в доступе', None, 5, None)
+Traceback (most recent call last):
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 473, in receive
+    ready, req = _receive(1.0)
+                 ^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 445, in _recv
+    return True, loads(get_payload())
+                       ^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\queues.py", line 394, in get_payload
+    with self._rlock:
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\synchronize.py", line 115, in __enter__
+    return self._semlock.__enter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 351, in workloop
+    req = wait_for_job()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 480, in receive
+    raise SystemExit(EX_FAILURE)
+SystemExit: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 292, in __call__
+    sys.exit(self.workloop(pid=pid))
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 396, in workloop
+    self._ensure_messages_consumed(completed=completed)
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 406, in _ensure_messages_consumed
+    if self.on_ready_counter.value >= completed:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 3, in getvalue
+PermissionError: [WinError 5] Отказано в доступе
+[2024-12-16 01:02:22,715: DEBUG/MainProcess] Timer wake-up! Next ETA 0.01599999999962165 secs.
+[2024-12-16 01:02:22,731: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+2024-12-16 01:02:22,941 - DEBUG - https://api-seller.ozon.ru:443 "POST /v1/product/info/stocks-by-warehouse/fbs HTTP/11" 400 57
+2024-12-16 01:02:22,959 - DEBUG - https://api-seller.ozon.ru:443 "POST /v1/product/info/stocks-by-warehouse/fbs HTTP/11" 400 57
+[2024-12-16 01:02:23,104: DEBUG/SpawnPoolWorker-2] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[2024-12-16 01:02:23,104: DEBUG/SpawnPoolWorker-2] 
+def xmap(task, it):
+    return 1
+
+[2024-12-16 01:02:23,104: DEBUG/SpawnPoolWorker-2] 
+def do_data_update():
+    return 1
+
+[2024-12-16 01:02:23,104: DEBUG/SpawnPoolWorker-2] 
+def backend_cleanup():
+    return 1
+
+[2024-12-16 01:02:23,105: DEBUG/SpawnPoolWorker-2] 
+def chain(*args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:23,105: DEBUG/SpawnPoolWorker-2] 
+def xstarmap(task, it):
+    return 1
+
+[2024-12-16 01:02:23,105: DEBUG/SpawnPoolWorker-2] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:23,105: DEBUG/SpawnPoolWorker-2] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[2024-12-16 01:02:23,105: DEBUG/SpawnPoolWorker-2] 
+def chunks(task, it, n):
+    return 1
+
+[2024-12-16 01:02:23,106: DEBUG/SpawnPoolWorker-2] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[2024-12-16 01:02:23,110: ERROR/MainProcess] Process 'SpawnPoolWorker-7' pid:4284 exited with 'exitcode 1'
+[2024-12-16 01:02:23,120: DEBUG/SpawnPoolWorker-1] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[2024-12-16 01:02:23,121: DEBUG/SpawnPoolWorker-1] 
+def xmap(task, it):
+    return 1
+
+[2024-12-16 01:02:23,121: DEBUG/SpawnPoolWorker-1] 
+def do_data_update():
+    return 1
+
+[2024-12-16 01:02:23,121: DEBUG/SpawnPoolWorker-1] 
+def backend_cleanup():
+    return 1
+
+[2024-12-16 01:02:23,121: DEBUG/SpawnPoolWorker-1] 
+def chain(*args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:23,122: DEBUG/SpawnPoolWorker-1] 
+def xstarmap(task, it):
+    return 1
+
+[2024-12-16 01:02:23,122: DEBUG/SpawnPoolWorker-1] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:23,123: DEBUG/SpawnPoolWorker-1] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[2024-12-16 01:02:23,123: DEBUG/SpawnPoolWorker-1] 
+def chunks(task, it, n):
+    return 1
+
+[2024-12-16 01:02:23,124: DEBUG/SpawnPoolWorker-1] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[2024-12-16 01:02:23,125: ERROR/SpawnPoolWorker-1] Pool process <billiard.pool.Worker object at 0x0000021145A18610> error: PermissionError(13, 'Отказано в доступе', None, 5, None)
+Traceback (most recent call last):
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 473, in receive
+    ready, req = _receive(1.0)
+                 ^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 445, in _recv
+    return True, loads(get_payload())
+                       ^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\queues.py", line 394, in get_payload
+    with self._rlock:
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\synchronize.py", line 115, in __enter__
+    return self._semlock.__enter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 351, in workloop
+    req = wait_for_job()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 480, in receive
+    raise SystemExit(EX_FAILURE)
+SystemExit: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 292, in __call__
+    sys.exit(self.workloop(pid=pid))
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 396, in workloop
+    self._ensure_messages_consumed(completed=completed)
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 406, in _ensure_messages_consumed
+    if self.on_ready_counter.value >= completed:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 3, in getvalue
+PermissionError: [WinError 5] Отказано в доступе
+[2024-12-16 01:02:23,125: ERROR/SpawnPoolWorker-1] Pool process <billiard.pool.Worker object at 0x0000021145A18610> error: PermissionError(13, 'Отказано в доступе', None, 5, None)
+Traceback (most recent call last):
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 473, in receive
+    ready, req = _receive(1.0)
+                 ^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 445, in _recv
+    return True, loads(get_payload())
+                       ^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\queues.py", line 394, in get_payload
+    with self._rlock:
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\synchronize.py", line 115, in __enter__
+    return self._semlock.__enter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 351, in workloop
+    req = wait_for_job()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 480, in receive
+    raise SystemExit(EX_FAILURE)
+SystemExit: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 292, in __call__
+    sys.exit(self.workloop(pid=pid))
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 396, in workloop
+    self._ensure_messages_consumed(completed=completed)
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\billiard\pool.py", line 406, in _ensure_messages_consumed
+    if self.on_ready_counter.value >= completed:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 3, in getvalue
+PermissionError: [WinError 5] Отказано в доступе
+[2024-12-16 01:02:23,211: DEBUG/MainProcess] recreated blocker with handle 28
+[2024-12-16 01:02:23,211: DEBUG/MainProcess] recreated blocker with handle 32
+[2024-12-16 01:02:23,363: DEBUG/MainProcess] recreated blocker with handle 36
+[2024-12-16 01:02:23,364: INFO/SpawnPoolWorker-13] child process 9172 calling self.run()
+[2024-12-16 01:02:23,733: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+2024-12-16 01:02:23,813 - DEBUG - Starting new HTTPS connection (1): api-seller.ozon.ru:443
+[2024-12-16 01:02:23,915: ERROR/MainProcess] Process 'SpawnPoolWorker-1' pid:23428 exited with 'exitcode 1'
+2024-12-16 01:02:23,958 - DEBUG - https://api-seller.ozon.ru:443 "POST /v1/product/info/stocks-by-warehouse/fbs HTTP/11" 400 57
+[2024-12-16 01:02:24,033: DEBUG/MainProcess] recreated blocker with handle 28
+[2024-12-16 01:02:24,034: DEBUG/MainProcess] recreated blocker with handle 32
+[2024-12-16 01:02:24,131: DEBUG/SpawnPoolWorker-13] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[2024-12-16 01:02:24,132: DEBUG/SpawnPoolWorker-13] 
+def xmap(task, it):
+    return 1
+
+[2024-12-16 01:02:24,132: DEBUG/SpawnPoolWorker-13] 
+def do_data_update():
+    return 1
+
+[2024-12-16 01:02:24,132: DEBUG/SpawnPoolWorker-13] 
+def backend_cleanup():
+    return 1
+
+[2024-12-16 01:02:24,132: DEBUG/SpawnPoolWorker-13] 
+def chain(*args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:24,132: DEBUG/SpawnPoolWorker-13] 
+def xstarmap(task, it):
+    return 1
+
+[2024-12-16 01:02:24,133: DEBUG/SpawnPoolWorker-13] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:24,133: DEBUG/SpawnPoolWorker-13] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[2024-12-16 01:02:24,133: DEBUG/SpawnPoolWorker-13] 
+def chunks(task, it, n):
+    return 1
+
+[2024-12-16 01:02:24,133: DEBUG/SpawnPoolWorker-13] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[2024-12-16 01:02:24,203: DEBUG/MainProcess] recreated blocker with handle 40
+[2024-12-16 01:02:24,203: INFO/SpawnPoolWorker-14] child process 21120 calling self.run()
+2024-12-16 01:02:24,647 - DEBUG - Starting new HTTPS connection (1): api-seller.ozon.ru:443
+[2024-12-16 01:02:24,733: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9690000000009604 secs.
+[2024-12-16 01:02:25,703: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+2024-12-16 01:02:25,786 - DEBUG - https://api-seller.ozon.ru:443 "POST /v1/product/info/stocks-by-warehouse/fbs HTTP/11" 400 57
+[2024-12-16 01:02:25,944: DEBUG/SpawnPoolWorker-14] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[2024-12-16 01:02:25,944: DEBUG/SpawnPoolWorker-14] 
+def xmap(task, it):
+    return 1
+
+[2024-12-16 01:02:25,945: DEBUG/SpawnPoolWorker-14] 
+def do_data_update():
+    return 1
+
+[2024-12-16 01:02:25,945: DEBUG/SpawnPoolWorker-14] 
+def backend_cleanup():
+    return 1
+
+[2024-12-16 01:02:25,945: DEBUG/SpawnPoolWorker-14] 
+def chain(*args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:25,945: DEBUG/SpawnPoolWorker-14] 
+def xstarmap(task, it):
+    return 1
+
+[2024-12-16 01:02:25,946: DEBUG/SpawnPoolWorker-14] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[2024-12-16 01:02:25,946: DEBUG/SpawnPoolWorker-14] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[2024-12-16 01:02:25,946: DEBUG/SpawnPoolWorker-14] 
+def chunks(task, it, n):
+    return 1
+
+[2024-12-16 01:02:25,946: DEBUG/SpawnPoolWorker-14] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[2024-12-16 01:02:26,704: DEBUG/MainProcess] Timer wake-up! Next ETA 0.030999999999039574 secs.
+[2024-12-16 01:02:26,736: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:27,737: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:28,738: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:29,739: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9690000000009604 secs.
+[2024-12-16 01:02:30,709: DEBUG/MainProcess] Timer wake-up! Next ETA 0.030999999999039574 secs.
+[2024-12-16 01:02:30,741: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:31,742: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:32,742: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:33,745: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:34,746: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9690000000009604 secs.
+[2024-12-16 01:02:35,715: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:36,716: DEBUG/MainProcess] Timer wake-up! Next ETA 0.014999999999417923 secs.
+[2024-12-16 01:02:36,731: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:37,732: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:38,733: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:39,734: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9690000000009604 secs.
+[2024-12-16 01:02:40,703: DEBUG/MainProcess] Timer wake-up! Next ETA 0.030999999999039574 secs.
+[2024-12-16 01:02:40,735: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:41,736: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:42,737: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:43,738: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:44,739: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9690000000009604 secs.
+[2024-12-16 01:02:45,709: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:46,709: DEBUG/MainProcess] Timer wake-up! Next ETA 0.030999999999039574 secs.
+[2024-12-16 01:02:46,741: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:47,742: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:48,744: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:49,744: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9690000000009604 secs.
+[2024-12-16 01:02:50,714: DEBUG/MainProcess] Timer wake-up! Next ETA 0.030999999999039574 secs.
+[2024-12-16 01:02:50,745: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:51,746: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:52,747: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:53,748: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:54,749: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9530000000013388 secs.
+[2024-12-16 01:02:55,704: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:56,704: DEBUG/MainProcess] Timer wake-up! Next ETA 0.046999999998661224 secs.
+[2024-12-16 01:02:56,753: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:57,753: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:58,754: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:02:59,755: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9530000000013388 secs.
+[2024-12-16 01:03:00,708: DEBUG/MainProcess] Timer wake-up! Next ETA 0.046999999998661224 secs.
+[2024-12-16 01:03:00,756: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:01,757: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:02,758: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:03,759: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:04,759: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9530000000013388 secs.
+[2024-12-16 01:03:05,713: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:06,714: DEBUG/MainProcess] Timer wake-up! Next ETA 0.046999999998661224 secs.
+[2024-12-16 01:03:06,762: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:07,763: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:08,764: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:09,765: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9370000000017171 secs.
+[2024-12-16 01:03:10,703: DEBUG/MainProcess] Timer wake-up! Next ETA 0.06299999999828287 secs.
+[2024-12-16 01:03:10,770: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:11,771: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:12,771: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:13,772: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:14,772: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9370000000017171 secs.
+[2024-12-16 01:03:15,710: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:16,711: DEBUG/MainProcess] Timer wake-up! Next ETA 0.06299999999828287 secs.
+[2024-12-16 01:03:16,775: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:17,775: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:18,775: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:19,776: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9370000000017171 secs.
+[2024-12-16 01:03:20,714: DEBUG/MainProcess] Timer wake-up! Next ETA 0.06299999999828287 secs.
+[2024-12-16 01:03:20,778: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:21,779: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:22,779: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:23,780: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:24,781: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9220000000022992 secs.
+[2024-12-16 01:03:25,704: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:26,705: DEBUG/MainProcess] Timer wake-up! Next ETA 0.0779999999977008 secs.
+[2024-12-16 01:03:26,785: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:27,785: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:28,786: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:29,787: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9220000000022992 secs.
+[2024-12-16 01:03:30,711: DEBUG/MainProcess] Timer wake-up! Next ETA 0.0779999999977008 secs.
+[2024-12-16 01:03:30,790: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:31,792: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:32,794: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:33,794: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:34,795: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9060000000026776 secs.
+[2024-12-16 01:03:35,702: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:36,702: DEBUG/MainProcess] Timer wake-up! Next ETA 0.09399999999732245 secs.
+[2024-12-16 01:03:36,797: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:37,797: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:38,798: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:39,799: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9060000000026776 secs.
+[2024-12-16 01:03:40,706: DEBUG/MainProcess] Timer wake-up! Next ETA 0.09399999999732245 secs.
+[2024-12-16 01:03:40,802: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:41,802: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:42,806: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:43,806: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:44,807: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9060000000026776 secs.
+[2024-12-16 01:03:45,714: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:46,714: DEBUG/MainProcess] Timer wake-up! Next ETA 0.09399999999732245 secs.
+[2024-12-16 01:03:46,809: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:47,813: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9850000000005821 secs.
+[2024-12-16 01:03:48,798: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:49,800: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9060000000026776 secs.
+[2024-12-16 01:03:50,706: DEBUG/MainProcess] Timer wake-up! Next ETA 0.09399999999732245 secs.
+[2024-12-16 01:03:50,801: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:51,802: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:52,803: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:53,804: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:54,805: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9060000000026776 secs.
+[2024-12-16 01:03:55,712: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:56,712: DEBUG/MainProcess] Timer wake-up! Next ETA 0.09399999999732245 secs.
+[2024-12-16 01:03:56,807: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:57,807: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:58,809: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:03:59,810: DEBUG/MainProcess] Timer wake-up! Next ETA 0.8910000000032596 secs.
+[2024-12-16 01:04:00,701: DEBUG/MainProcess] Timer wake-up! Next ETA 0.10899999999674037 secs.
+[2024-12-16 01:04:00,810: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:01,811: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:02,812: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:03,813: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:04,813: DEBUG/MainProcess] Timer wake-up! Next ETA 0.8910000000032596 secs.
+[2024-12-16 01:04:05,706: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:06,706: DEBUG/MainProcess] Timer wake-up! Next ETA 0.10899999999674037 secs.
+[2024-12-16 01:04:06,816: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:07,817: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:08,818: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:09,819: DEBUG/MainProcess] Timer wake-up! Next ETA 0.8910000000032596 secs.
+[2024-12-16 01:04:10,711: DEBUG/MainProcess] Timer wake-up! Next ETA 0.10899999999674037 secs.
+[2024-12-16 01:04:10,820: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:11,821: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:12,821: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:13,823: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:14,823: DEBUG/MainProcess] Timer wake-up! Next ETA 0.8910000000032596 secs.
+[2024-12-16 01:04:15,717: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:16,718: DEBUG/MainProcess] Timer wake-up! Next ETA 0.09299999999711872 secs.
+[2024-12-16 01:04:16,814: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:17,815: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:18,816: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:19,817: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9070000000028813 secs.
+[2024-12-16 01:04:20,724: DEBUG/MainProcess] Timer wake-up! Next ETA 0.09299999999711872 secs.
+[2024-12-16 01:04:20,818: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:21,819: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:22,819: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:23,820: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:24,821: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9070000000028813 secs.
+[2024-12-16 01:04:25,728: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:26,729: DEBUG/MainProcess] Timer wake-up! Next ETA 0.09299999999711872 secs.
+[2024-12-16 01:04:26,823: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:27,824: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:28,824: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:29,825: DEBUG/MainProcess] Timer wake-up! Next ETA 0.8909999999996217 secs.
+[2024-12-16 01:04:30,717: DEBUG/MainProcess] Timer wake-up! Next ETA 0.09299999999711872 secs.
+[2024-12-16 01:04:30,810: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:31,811: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:32,813: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:33,814: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:34,814: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9070000000028813 secs.
+[2024-12-16 01:04:35,722: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:36,723: DEBUG/MainProcess] Timer wake-up! Next ETA 0.09299999999711872 secs.
+[2024-12-16 01:04:36,816: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:37,817: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:38,818: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:39,819: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9070000000028813 secs.
+[2024-12-16 01:04:40,726: DEBUG/MainProcess] Timer wake-up! Next ETA 0.09299999999711872 secs.
+[2024-12-16 01:04:40,820: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:41,821: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:42,821: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:43,822: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:44,823: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9070000000028813 secs.
+[2024-12-16 01:04:45,731: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:46,731: DEBUG/MainProcess] Timer wake-up! Next ETA 0.0779999999977008 secs.
+[2024-12-16 01:04:46,810: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:47,811: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:48,812: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:49,813: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9070000000028813 secs.
+[2024-12-16 01:04:50,720: DEBUG/MainProcess] Timer wake-up! Next ETA 0.09299999999711872 secs.
+[2024-12-16 01:04:50,813: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:51,814: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:52,815: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:53,816: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:54,817: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9070000000028813 secs.
+[2024-12-16 01:04:55,725: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:56,726: DEBUG/MainProcess] Timer wake-up! Next ETA 0.09299999999711872 secs.
+[2024-12-16 01:04:56,819: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:57,820: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:58,821: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:04:59,822: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9070000000028813 secs.
+[2024-12-16 01:05:00,730: DEBUG/MainProcess] Timer wake-up! Next ETA 0.09299999999711872 secs.
+[2024-12-16 01:05:00,823: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:01,824: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:02,825: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:03,826: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:04,826: DEBUG/MainProcess] Timer wake-up! Next ETA 0.8909999999996217 secs.
+[2024-12-16 01:05:05,718: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:06,719: DEBUG/MainProcess] Timer wake-up! Next ETA 0.10900000000037835 secs.
+[2024-12-16 01:05:06,829: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:07,830: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:08,831: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:09,831: DEBUG/MainProcess] Timer wake-up! Next ETA 0.8909999999996217 secs.
+[2024-12-16 01:05:10,723: DEBUG/MainProcess] Timer wake-up! Next ETA 0.10900000000037835 secs.
+[2024-12-16 01:05:10,832: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:11,833: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:12,834: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:13,835: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:14,835: DEBUG/MainProcess] Timer wake-up! Next ETA 0.8909999999996217 secs.
+[2024-12-16 01:05:15,727: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:16,728: DEBUG/MainProcess] Timer wake-up! Next ETA 0.10900000000037835 secs.
+[2024-12-16 01:05:16,837: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:17,838: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:18,839: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:19,840: DEBUG/MainProcess] Timer wake-up! Next ETA 0.8909999999996217 secs.
+[2024-12-16 01:05:20,731: DEBUG/MainProcess] Timer wake-up! Next ETA 0.09400000000096043 secs.
+[2024-12-16 01:05:20,826: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:21,827: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:22,828: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:23,828: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:24,829: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9059999999990396 secs.
+[2024-12-16 01:05:25,736: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:26,736: DEBUG/MainProcess] Timer wake-up! Next ETA 0.09400000000096043 secs.
+[2024-12-16 01:05:26,830: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:27,831: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:28,832: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:29,833: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9059999999990396 secs.
+[2024-12-16 01:05:30,742: DEBUG/MainProcess] Timer wake-up! Next ETA 0.09400000000096043 secs.
+[2024-12-16 01:05:30,836: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:31,837: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:32,837: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:33,838: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:34,839: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9059999999990396 secs.
+[2024-12-16 01:05:35,747: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:36,748: DEBUG/MainProcess] Timer wake-up! Next ETA 0.07800000000133878 secs.
+[2024-12-16 01:05:36,826: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:37,827: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:38,828: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:39,829: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9059999999990396 secs.
+[2024-12-16 01:05:40,735: DEBUG/MainProcess] Timer wake-up! Next ETA 0.09400000000096043 secs.
+[2024-12-16 01:05:40,830: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:41,831: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-12-16 01:05:42,472: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\redis\connection.py", line 592, in read_response
+    response = self._parser.read_response(disable_decoding=disable_decoding)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\redis\_parsers\resp2.py", line 15, in read_response
+    result = self._read_response(disable_decoding=disable_decoding)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\redis\_parsers\resp2.py", line 25, in _read_response
+    raw = self._buffer.readline()
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\redis\_parsers\socket.py", line 115, in readline
+    self._read_from_socket()
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\redis\_parsers\socket.py", line 65, in _read_from_socket
+    data = self._sock.recv(socket_read_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\celery\worker\consumer\consumer.py", line 340, in start
+    blueprint.start(self)
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\celery\bootsteps.py", line 116, in start
+    step.start(parent)
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\celery\worker\consumer\consumer.py", line 746, in start
+    c.loop(*c.loop_args())
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\celery\worker\loops.py", line 130, in synloop
+    connection.drain_events(timeout=2.0)
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\kombu\connection.py", line 341, in drain_events
+    return self.transport.drain_events(self.connection, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\kombu\transport\virtual\base.py", line 997, in drain_events
+    get(self._deliver, timeout=timeout)
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\kombu\transport\redis.py", line 591, in get
+    ret = self.handle_event(fileno, event)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\kombu\transport\redis.py", line 573, in handle_event
+    return self.on_readable(fileno), self
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\kombu\transport\redis.py", line 569, in on_readable
+    chan.handlers[type]()
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\kombu\transport\redis.py", line 918, in _receive
+    ret.append(self._receive_one(c))
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\kombu\transport\redis.py", line 928, in _receive_one
+    response = c.parse_response()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\redis\client.py", line 865, in parse_response
+    response = self._execute(conn, try_read)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\redis\client.py", line 841, in _execute
+    return conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\redis\retry.py", line 65, in call_with_retry
+    fail(error)
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\redis\client.py", line 843, in <lambda>
+    lambda error: self._disconnect_raise_connect(conn, error),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\redis\client.py", line 830, in _disconnect_raise_connect
+    raise error
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\redis\retry.py", line 62, in call_with_retry
+    return do()
+           ^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\redis\client.py", line 842, in <lambda>
+    lambda: command(*args, **kwargs),
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\redis\client.py", line 863, in try_read
+    return conn.read_response(disconnect_on_error=False, push_request=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\redis\connection.py", line 600, in read_response
+    raise ConnectionError(
+redis.exceptions.ConnectionError: Error while reading from localhost:6379 : (10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None)
+[2024-12-16 01:05:46,603: WARNING/MainProcess] C:\Users\gigih\PycharmProjects\System_PGD\venv\Lib\site-packages\celery\worker\consumer\consumer.py:391: CPendingDeprecationWarning: 
+In Celery 5.1 we introduced an optional breaking change which
+on connection loss cancels all currently executed tasks with late acknowledgement enabled.
+These tasks cannot be acknowledged as the connection is gone, and the tasks are automatically redelivered
+back to the queue. You can enable this behavior using the worker_cancel_long_running_tasks_on_connection_loss
+setting. In Celery 5.1 it is set to False by default. The setting will be set to True by default in Celery 6.0.
+
+  warnings.warn(CANCEL_TASKS_BY_DEFAULT, CPendingDeprecationWarning)
+
+[2024-12-16 01:05:46,604: DEBUG/MainProcess] | Consumer: Restarting event loop...
+[2024-12-16 01:05:46,604: DEBUG/MainProcess] | Consumer: Restarting Control...
+[2024-12-16 01:05:46,604: DEBUG/MainProcess] | Consumer: Restarting Tasks...
+[2024-12-16 01:05:46,604: DEBUG/MainProcess] Canceling task consumer...
+[2024-12-16 01:05:46,604: DEBUG/MainProcess] | Consumer: Restarting Heart...

@@ -3,6 +3,7 @@ from django.shortcuts import render
 from django.contrib.auth import authenticate, login
 from .forms import LoginForm, UserRegistrationForm
 from django.contrib.auth.decorators import login_required
+from .models import ozon
 
 @login_required
 def dashboard(request):
@@ -12,6 +13,15 @@ def dashboard(request):
     return render(request,
                   'account/dashboard.html',
                   {'section': 'dashboard'})
+'''
+def Ozon_Analitic(request):
+    ozon_instance = ozon.objects.data(user=request.user)
+    count_FBS_data = [good['count_from_FBS'] for good in ozon_instance]
+    price_data = [good['price'] for good in ozon_instance]
+    date_data = [good['date'] for good in ozon_instance]
+    return render(request,
+                  'account/dashboard.html',
+                  {'section': 'dashboard'})'''
 
 def user_login(request):
     if request.method == 'POST':

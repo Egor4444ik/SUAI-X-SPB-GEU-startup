@@ -1,13 +1,18 @@
 import logging
 from django.contrib.auth.models import User
 from .models import ozon
-from celery import shared_task
+from celery import shared_task, Celery
 from celery.schedules import crontab
 
 logger = logging.getLogger(__name__)
+app = Celery()
+@app.on_after_configure.connect
+def setup_periodic_tasks(sender, **kwargs):
+    sender.add_periodic_task(10.0, test.s('hello'), name='add every 10')
 
-@shared_task()
-def do_data_update():
+@app.task
+def do_data_update(sender, **kwards):
+    logger.info("do_data_update started")
     try:
         # 1. Обновление для всех пользователей
         users = User.objects.all()
@@ -24,3 +29,7 @@ def do_data_update():
                 logger.exception(f"Error updating data for user {user.username}: {e}") #  'exception' записывает traceback
     except Exception as e:
         logger.exception(f"Global error during data update: {e}")
+
+@app.task
+def test(arg):
+    print(arg)

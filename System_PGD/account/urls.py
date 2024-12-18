@@ -23,6 +23,7 @@ urlpatterns = [
     path('', include('django.contrib.auth.urls')),
     path('', views.dashboard, name='dashboard'),
     path('register/', views.register, name='register'),
+    #path('Ozon Analitic/', views.Ozon_Analitic, name='Oz_Anal')
 ]
 
 if settings.DEBUG:
