@@ -14,10 +14,10 @@ def setup_periodic_tasks(sender, **kwargs):
 def do_data_update(sender, **kwards):
     logger.info("do_data_update started")
     try:
-        # 1. Обновление для всех пользователей
+        #Обновление для всех пользователей
         users = User.objects.all()
-        # 2. Обновление для конкретного пользователя
-        #users = User.objects.filter(username='your_username') # Замените 'your_username' на нужное имя пользователя
+        #Обновление для конкретного пользователя
+        #users = User.objects.filter(username='username')
 
         for user in users:
             try:
