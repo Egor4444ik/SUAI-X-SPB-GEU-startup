@@ -6,14 +6,18 @@ logger = logging.getLogger(__name__)
 
 
 def timer_to_update():
-    while True:
-        if time.localtime().tm_hour ==23:
+    logger.info('update data timer on')
+    delta_hours = time.localtime().tm_hour - 23
+    if delta_hours != 0:
+        lost_seconds = 23*60*60 - (time.localtime().tm_sec+time.localtime().tm_min*60+time.localtime().tm_hour*60*60)
+        message = 'waiting timer lost:', lost_seconds, 'seconds'
+        logger.info(message)
+        time.sleep(lost_seconds)
+    else:
+        while True:
             try:
-                # 1. Обновление для всех пользователей
                 users = User.objects.all()
-                # 2. Обновление для конкретного пользователя
-                # users = User.objects.filter(username='your_username') # Замените 'your_username' на нужное имя пользователя
-                logger.info(users)
+                #users = User.objects.filter(username='your_username')
                 for user in users:
                     try:
                         flag = True
@@ -30,4 +34,4 @@ def timer_to_update():
                             f"Error updating data for user {user.username}: {e}")  # 'exception' записывает traceback
             except Exception as e:
                 logger.exception(f"Global error during data update: {e}")
-            time.sleep(7200)
+            time.sleep(79552)
