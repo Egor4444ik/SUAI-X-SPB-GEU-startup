@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_celery_beat'
+    'django_celery_beat',
+    'django_celery_results'
 ]
 
 MIDDLEWARE = [
@@ -118,15 +119,21 @@ USE_I18N = True
 
 USE_TZ = True
 
-CELERY_IMPORTS = ('account.tasks',)
-
 CELERY_BROKER_URL = 'redis://localhost:6379/0'
 CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
 CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
+CELERY_TIMEZONE = "Europe/Moscow"
+CELERY_TASK_TRACK_STARTED = True
+CELERY_RESULT_BACKEND = 'django-db'
+CELERY_CACHE_BACKEND = 'default'
 CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
-CELERY_SEND_TASK_ERROR_EMAILS = True
-CELERY_TASK_RESULT_EXPIRES = None
 
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'my_cache_table',
+    }
+}
 ADMINS = ( ('Admin', 'admin@localhost'), )
 
 CELERYD_MAX_TASKS_PER_CHILD = 5

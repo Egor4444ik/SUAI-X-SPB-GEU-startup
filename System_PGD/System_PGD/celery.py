@@ -3,18 +3,27 @@ import logging
 from logging.handlers import RotatingFileHandler
 import os
 from celery import Celery
+from celery.schedules import crontab
 
 # set the default Django settings module for the 'celery' program.
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'System_PGD.settings')
 
-app = Celery('System_PGD')
+app = Celery('System_PGD', broker='redis://localhost:6379/0', backend ='redis://localhost:6379/0', include=['account.tasks'])
 
+# Using a string here means the worker doesn't have to serialize
+# the configuration object to child processes.
+# - namespace='CELERY' means all celery-related configuration keys
+#   should have a `CELERY_` prefix.
 app.config_from_object('django.conf:settings', namespace='CELERY')
+
+# Load task modules from all registered Django apps.
 app.autodiscover_tasks()
 
-logger = logging.getLogger('celery')
-logger.setLevel(logging.DEBUG)
-handler = RotatingFileHandler('celery.log', maxBytes=10* 1024 *1024, backupCount=5)
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-handler.setFormatter(formatter)
-logger.addHandler(handler)
+app.conf.timezone = 'UTC'
+
+app.conf.update(
+    result_expires=3600,
+)
+
+if __name__ == '__main__':
+    app.start()

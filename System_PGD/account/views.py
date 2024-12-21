@@ -4,12 +4,16 @@ from django.contrib.auth import authenticate, login
 from .forms import LoginForm, UserRegistrationForm
 from django.contrib.auth.decorators import login_required
 from .models import ozon
+from .timer import timer_to_update
 
 @login_required
 def dashboard(request):
     '''ozon_instance = ozon.objects.get_or_create(user=request.user)[0]
     ozon_instance.update_data()
     print(ozon_instance.data.get('iphone_16', {}))'''
+
+    timer_to_update()
+
     return render(request,
                   'account/dashboard.html',
                   {'section': 'dashboard'})
@@ -24,6 +28,7 @@ def Ozon_Analitic(request):
                   {'section': 'dashboard'})'''
 
 def user_login(request):
+
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
