@@ -1,4 +1,4 @@
-import logging
+''''''import logging
 from django.contrib.auth.models import User
 from .models import ozon
 from celery import shared_task, Celery
@@ -17,11 +17,14 @@ def do_data_update():
     logger.info("do_data_update started")
     name = 'do_data_update'
     try:
-        # 1. Обновление для всех пользователей
+        #Обновление для всех пользователей
         users = User.objects.all()
         # 2. Обновление для конкретного пользователя
         #users = User.objects.filter(username='your_username') # Замените 'your_username' на нужное имя пользователя
         logger.info(users)
+        #Обновление для конкретного пользователя
+        #users = User.objects.filter(username='username')
+
         for user in users:
             try:
                 flag = True

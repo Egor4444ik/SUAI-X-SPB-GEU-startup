@@ -1,4 +1,4 @@
-from __future__ import absolute_import, unicode_literals
+'''from __future__ import absolute_import, unicode_literals
 import logging
 from logging.handlers import RotatingFileHandler
 import os
@@ -26,4 +26,4 @@ app.conf.update(
 )
 
 if __name__ == '__main__':
-    app.start()
+    app.start()'''
