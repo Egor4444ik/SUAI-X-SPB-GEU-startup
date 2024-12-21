@@ -1,4 +1,4 @@
-''''''import logging
+'''''''''import logging
 from django.contrib.auth.models import User
 from .models import ozon
 from celery import shared_task, Celery
@@ -43,3 +43,4 @@ def do_data_update():
 @app.task
 def test(arg):
     print(arg)
+'''
