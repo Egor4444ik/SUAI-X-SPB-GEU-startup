@@ -4,31 +4,31 @@ from django.contrib.auth import authenticate, login
 from .forms import LoginForm, UserRegistrationForm
 from django.contrib.auth.decorators import login_required
 from .models import ozon
-from .timer import timer_to_update
+import matplotlib
 
 @login_required
 def dashboard(request):
-    '''ozon_instance = ozon.objects.get_or_create(user=request.user)[0]
+    ozon_instance = ozon.objects.get_or_create(user=request.user)[0]
     ozon_instance.update_data()
-    print(ozon_instance.data.get('iphone_16', {}))'''
-
-    timer_to_update()
-
+    print(ozon_instance.data.get('iphone_16', {}))
     return render(request,
                   'account/dashboard.html',
                   {'section': 'dashboard'})
-'''
-def Ozon_Analitic(request):
-    ozon_instance = ozon.objects.data(user=request.user)
-    count_FBS_data = [good['count_from_FBS'] for good in ozon_instance]
-    price_data = [good['price'] for good in ozon_instance]
-    date_data = [good['date'] for good in ozon_instance]
-    return render(request,
-                  'account/dashboard.html',
-                  {'section': 'dashboard'})'''
+
+def wildberries_analitic(request):
+    return render(request, 'account/wildberries_analitic.html', {'section': 'wildberries_analitic'})
+
+def ozon_analitic(request):
+    ozon_instance = ozon.objects.get_or_create(user=request.user)[0]
+    
+    goods = [good for good in ozon_instance.data]
+
+
+    return render(request, 'account/ozon_analitic.html', {'section': 'ozon_analitic', "goods": goods})
+
+            
 
 def user_login(request):
-
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
