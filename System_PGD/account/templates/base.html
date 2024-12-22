@@ -11,13 +11,13 @@
         {% if request.user.is_authenticated %}
             <ul class="menu">
                 <li {% if section == "dashboard" %}class="selected"{% endif %}>
-                    <a href="{% url "dashboard" %}">My dashboard</a>
+                    <a href="{% url "dashboard" %}">Dashboard</a>
                 </li>
-                <li {% if section == "Ozon Analitic" %}class="selected"{% endif %}>
-                    <a href="#">Ozon Analitic</a>
+                <li {% if section == "ozon_analitic" %}class="selected"{% endif %}>
+                    <a href="{% url "ozon_analitic" %}">Ozon Analitic</a>
                 </li>
-                <li {% if section == "Wildberries Analitic" %}class="selected"{% endif %}>
-                    <a href="#">Wildberries Analitic</a>
+                <li {% if section == "wildberries_analitic" %}class="selected"{% endif %}>
+                    <a href="{% url "wildberries_analitic" %}">Wildberries Analitic</a>
                 </li>
             </ul>
         {% endif %}
