@@ -59,7 +59,13 @@ sequence_length = 200  # Как далеко анализируем
 X, y = PredictionModel.prepare_data(scaled_data, sequence_length)
 
 model_path = 'data/test_model.h5'
-PredictionModel.train_and_save_model(data, sequence_length, categories, model_path, categories_path, scaler_path, epochs=20)
+PredictionModel.train_and_save_model(data,
+                                    sequence_length,
+                                    categories,
+                                    model_path,
+                                    categories_path,
+                                    scaler_path,
+                                    epochs=20)
 
 model = PredictionModel(model_path, categories_path, scaler_path)
 last_sequence = scaled_data[-sequence_length:]
