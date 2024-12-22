@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Ozon Analitic{% endblock %}
+{% block content %}
+{% load static %}
+    {% for good in goods %}
+        <div class="good_page_div">
+            <img width="170" src="{% static 'img/image.png' %}" alt="photo">
+            <div class="col">
+                <div><a class="good_page_url" href="ozon_analitic/{{good}}">{{good}}</a></div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
