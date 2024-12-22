@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+{% load static %}
+<select>
+    {% for good in goods %}
+        <option method="post" >{{good}}</option>
+    {% endfor %}
+</select>
+{% endblock %}
