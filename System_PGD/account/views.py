@@ -4,7 +4,6 @@ from django.contrib.auth import authenticate, login
 from .forms import LoginForm, UserRegistrationForm
 from django.contrib.auth.decorators import login_required
 from .models import ozon
-import matplotlib.pyplot as plt
 
 
 @login_required
