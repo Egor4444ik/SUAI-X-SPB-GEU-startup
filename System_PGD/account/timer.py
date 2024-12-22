@@ -28,7 +28,7 @@ def timer_to_update():
                         if flag:
                             ozon_instance.update_data()
                             logger.info(f"Updated data for user: {user.username}, created: {created}")
-                            logger.info(f"Data: {ozon_instance.data.get('iphone_16', {})}")
+                            #logger.info(f"Data: {ozon_instance.data.get('iphone_16', {})}")
                     except Exception as e:
                         logger.exception(
                             f"Error updating data for user {user.username}: {e}")  # 'exception' записывает traceback
