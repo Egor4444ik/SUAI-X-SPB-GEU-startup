@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}add_product{% endblock %}
+{% block content %}
+{% load static %}
+<h1>Add product</h1>
+    <form>
+        <label for="Pid">Product id:</label>
+        <input type="Pid" name="product_id" required>
+        <label for="Oid">Offer id:</label>
+        <input type="Oid" name="offer_id" required>
+        <input type="submit">
+    </form>
+{% endblock %}

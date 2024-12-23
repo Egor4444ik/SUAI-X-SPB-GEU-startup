@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+    <h1>Dashboard</h1>
+    <h2>Ozon API</h2>
+    <form>
+        <label for="api">API key:</label>
+        <input type="api" name="ozon_api_key" required>
+        <label for="sec">Secret key:</label>
+        <input type="sec" name="ozon_secret key" required>
+        <input type="submit">
+    </form>
+{% endblock %}

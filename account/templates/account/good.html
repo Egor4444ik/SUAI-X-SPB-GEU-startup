@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}{{good}}{% endblock %}
+{% block content %}
+{% load static %}
+    <h1>{{good}}</h1>
+    <div class="graph">
+        Male to female ratio
+        <div><img src="{% static 'img/MaleToFemale.png' %}" alt="MaleToFemale"></div>
+    </div>
+    <div class="graph">
+        Goods quantity to time ratio
+        <div><img src="{% static 'img/QuantityToTime.png' %}" alt="QuantityToTime"></div>
+    </div>
+    <div class="graph">
+        Price to time ratio
+        <div><img src="{% static 'img/PriceToTime.png' %}" alt="PriceToTime"></div>
+    </div>
+    <div class="graph">
+        Price to goods quantity ratio
+        <div><img src="{% static 'img/PriceToQuantity.png' %}" alt="PriceToQuantity"></div>
+    </div>
+    <div class="graph">
+        Regions
+        <div><img src="{% static 'img/Regions.png' %}" alt="Regions"></div>
+    </div>
+    <div class="graph">
+        Age to regions ratio
+        <div><img src="{% static 'img/AgeToRegions.png' %}" alt="AgeToRegions"></div>
+    </div>
+    <div class="graph">
+        Age to time ratio
+        <div><img src="{% static 'img/AgeToTime.png' %}" alt="AgeToTime"></div>
+    </div>
+    <div class="graph">
+        Age to price ratio
+        <div><img src="{% static 'img/AgeToPrice.png' %}" alt="AgeToPrice"></div>
+    </div>
+{% endblock %}
